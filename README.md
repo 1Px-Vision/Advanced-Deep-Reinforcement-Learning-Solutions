@@ -6,4 +6,6 @@ This project is dedicated to developing and sharing cutting-edge models and tech
 # Project Overview
 This repository explores the application of advanced deep reinforcement learning (DRL) algorithms in three key areas:
 
-* Drone Navigation and Control: Enhance the autonomous capabilities of drones for complex navigation and operations.
+* **Drone Navigation and Control:** Enhance the autonomous capabilities of drones for complex navigation and operations.
+* **Vision Systems:** Implement DRL to improve vision-based systems' decision-making and object recognition capabilities.
+* **Control Systems:** Develop robust controllers that adapt to dynamic environments in real-time using DRL.
