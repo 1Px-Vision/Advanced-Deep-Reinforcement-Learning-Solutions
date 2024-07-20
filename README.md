@@ -9,3 +9,10 @@ This repository explores the application of advanced deep reinforcement learning
 * **Drone Navigation and Control:** Enhance the autonomous capabilities of drones for complex navigation and operations.
 * **Vision Systems:** Implement DRL to improve vision-based systems' decision-making and object recognition capabilities.
 * **Control Systems:** Develop robust controllers that adapt to dynamic environments in real-time using DRL.
+
+# Features
+* **Modular DRL Framework:** A flexible and extensible framework designed to plug into various simulation environments or real-world applications.
+* **Simulation Integration:** Pre-configured setups for popular simulation environments to test and validate algorithms.
+* **Real-World Testing Scenarios:** Guidelines and tools for deploying models in real-world testing environments with drones and vision systems.
+* **Comprehensive Documentation:** Detailed documentation covering setup, deployment, and algorithm customization.
+
