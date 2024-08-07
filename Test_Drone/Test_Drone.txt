@@ -4,3 +4,12 @@ Test_drone_RL_2->DQN
 Test_drone_RL_4->D3QN
 Test_drone_RL_6->A2C
 Test_drone_RL_8->A3C
+
+Action->[Nothing,Up,Down,Right,Left]
+Observation->[angle_to_up,
+            velocity,
+            angle_velocity,
+            distance_to_target,
+            angle_to_target,
+            angle_target_and_velocity,
+            distance_to_target]
