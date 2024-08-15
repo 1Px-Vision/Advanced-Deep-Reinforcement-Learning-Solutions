@@ -14,7 +14,7 @@ The actor-network takes 33 variables representing the observation space as input
 
 ## Fine-tuning the hyperparameters
 
-I experimented with various configurations for the network's depth and size, such as [128, 128], [128, 32], [64, 64, 64], and [200, 200]. However, I ultimately adopted the structure recommended in the paper: two hidden layers with 400 nodes in the first layer and 300 nodes in the second layer for both the Actor and Critic networks. The paper suggests using minibatches of size 64, with learning rates of 10^-4 for the Actor and 10^-3 for the Critic. After testing these and other configurations, I used minibatches of size 128 and a learning rate of 10^-3 for both networks. Regarding the replay buffer size, after some experimentation, I settled on 10^5, which is sufficient to store experiences from 5 full episodes of 1,000 steps each, considering using version 2 with 20 agents. The optimal value found for the discount factor (gamma) was 0.99, which prioritizes rewards approximately 100 steps ahead. Soft updates were applied at a rate of 10^-3 per learning step, with the target networks' weights being completely replaced after approximately every episode. For the exploration noise process, I determined a decay rate of 0.999, effectively minimizing the noise impact due to how this rate was updated.
+I experimented with various configurations for the network's depth and size, such as [128, 128], [128, 32], [64, 64, 64], and [200, 200]. However, I ultimately adopted the structure recommended in the paper: two hidden layers with 400 nodes in the first layer and 300 nodes in the second layer for both the Actor and Critic networks. The paper suggests using minibatches of size 64, with learning rates of 10^-4 for the Actor and 10^-3 for the Critic. After testing these and other configurations, I used minibatches of size 128 and a learning rate of 10^-3 for both networks. Regarding the replay buffer size, after some experimentation, I settled on 10^5, which is sufficient to store experiences from 5 full episodes of 1,000 steps each, considering using version 2 with 20 agents. The optimal value found for the discount factor (gamma) was 0.99, prioritizing rewards approximately 100 steps ahead. Soft updates were applied at a rate of 10^-3 per learning step, with the target networks' weights being completely replaced after approximately every episode. For the exploration noise process, I determined a decay rate of 0.999, effectively minimizing the noise impact due to how this rate was updated.
 
 In summary, the following values were assigned to the hyperparameters:
 
@@ -31,4 +31,8 @@ In summary, the following values were assigned to the hyperparameters:
 * target_score: 30.0
 * target_episodes: 100
 
+## Result
+### Plot of the rewards
+
+This graph presents the rewards per episode for all agents during the training phase and the moving average. It demonstrates that the Agent achieved a moving average reward of at least 30.0 points over the initial 100 episodes.
 
