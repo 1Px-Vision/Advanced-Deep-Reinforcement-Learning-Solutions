@@ -36,3 +36,8 @@ In summary, the following values were assigned to the hyperparameters:
 
 This graph presents the rewards per episode for all agents during the training phase and the moving average. It demonstrates that the Agent achieved a moving average reward of at least 30.0 points over the initial 100 episodes.
 
+## Trained Agent
+
+### Trained Agent
+
+### Untrained Agent
