@@ -8,6 +8,9 @@ This project aims to train an agent using Deep learning to navigate Unity's Bana
 
 The notebook 'File Report.ipynb' details the implementation and training of both DQN and Dueling DQN architectures, enabling an agent to navigate through Unity's Banana Collector environment. The agent successfully solves the environment in under 1800 episodes!
 
+# Model Weights
+The saved model weights of the successful agent are in the directory **Saved Model Weights** 
+
 # Enviroment & Task
 
 The environment is set in a square world populated with yellow and blue bananas. The agent aims to gather as many yellow bananas as possible while avoiding the blue ones. The agent can perform four actions: moving forward, backward, turning left, and turning right. The state space includes 37 dimensions that account for the agent's velocity and a ray-based perception of objects in front of the agent. Collecting a yellow banana results in a reward of +1, whereas collecting a blue banana incurs a penalty of -1. The task is structured in episodes, and to successfully solve the environment, the agent needs to achieve an average score of at least +13 across 100 consecutive episodes.
@@ -50,11 +53,11 @@ The DuelingDQNetwork class defines an enhanced architecture for Dueling Deep Q-N
 
 ### Architecture Overview:
 
-* Seed Initialization: The network uses a fixed seed for reproducibility of results.
-*  Input and Hidden Layers:
-   * Linear Layers: The model begins with three fully connected linear layers (fc1, fc2, fc3) that progressively transform the input state size to more manageable 
+* **Seed Initialization:** The network uses a fixed seed for reproducibility of results.
+*  **Input and Hidden Layers:**
+   * **Linear Layers:** The model begins with three fully connected linear layers (fc1, fc2, fc3) that progressively transform the input state size to more manageable 
      dimensions. Each layer increases the network's ability to capture deep features at various levels of abstraction.
-   * Batch Normalization: Applied after each linear transformation (bn1, bn2, bn3), batch normalization helps normalize the previous layers' output, 
+   * **Batch Normalization:** Applied after each linear transformation (bn1, bn2, bn3), batch normalization helps normalize the previous layers' output, 
       improving the stability and speed of the network's training process by ensuring consistent scale across inputs.
 
 * Streams for Value and Advantage:
