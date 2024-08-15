@@ -36,6 +36,8 @@ Additional hyperparameters used included:
 * Tau: 1e-3
 * Learning rate: 0.0005
 
+![Train_DQN](https://github.com/1Px-Vision/Advanced-Deep-Reinforcement-Learning-Solutions/blob/main/Project_Navigation/Train_DQN.jpg)
+
 ## Future improvements
   
 
