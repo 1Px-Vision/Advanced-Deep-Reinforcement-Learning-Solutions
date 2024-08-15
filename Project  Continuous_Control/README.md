@@ -42,9 +42,9 @@ This section outlines the steps to obtain the project code, set up the local env
 
 Select and download the appropriate environment for your operating system from the links below, then decompress the file into your project folder:
 
-* Version 1: One (1) Agent :
-* Version 2: Twenty (20) Agent :
-
+* Version 1: One (1) Agent : https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux_NoVis.zip
+* Version 2: Twenty (20) Agent : https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux_NoVis.zip
+ 
 ## Adjusting the Hyperparameters
 
 * target_score: How many points your agent must obtain to consider the environment solved
