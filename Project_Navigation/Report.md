@@ -67,6 +67,8 @@ The DuelingDQNetwork class defines an enhanced architecture for Dueling Deep Q-N
 
 The forward method describes how a state input through the network results in action values. It applies ReLU activations post-normalization to introduce non-linearity, allowing the network to learn complex patterns. The final Q-values are derived by summing the value for the state and the centered advantages for each action, which allows the network to discriminate between available actions based on the learned policy effectively.
 
+**Plot of rewards per episode** 
+
 ![Train_Dueling_DQN](https://github.com/1Px-Vision/Advanced-Deep-Reinforcement-Learning-Solutions/blob/main/Project_Navigation/Train_Dueling_DQN.jpg)
   
 
