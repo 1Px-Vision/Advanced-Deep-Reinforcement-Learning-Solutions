@@ -9,7 +9,7 @@ This project aims to train an agent using Deep learning to navigate Unity's Bana
 The notebook 'File Report.ipynb' details the implementation and training of both DQN and Dueling DQN architectures, enabling an agent to navigate through Unity's Banana Collector environment. The agent successfully solves the environment in under 1800 episodes!
 
 # Model Weights
-The saved model weights of the successful agent are in the directory **Saved Model Weights** 
+The model weights for successfully trained agents are stored in the **Saved Model Weights directory**. The file **model_best_DQN.pth** contains the weights for the standard DQN architecture, while **model_best_DuelingDQN.pth** houses the weights for the Dueling DQN architecture.
 
 # Enviroment & Task
 
