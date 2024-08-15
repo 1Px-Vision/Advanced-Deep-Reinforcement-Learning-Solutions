@@ -25,7 +25,7 @@ The neural network architecture implemented in the algorithm comprises a basic, 
 
 ### Training task
 
-To train the agent, we implemented a loop that allowed interaction with the environment to gather and learn from experiences. A critical hyperparameter in our training process was the number of episodes. This parameter was manually adjusted to balance training duration and agent performance. In our final setup, we used 1200 episodes, though the environment was solved in just 775. Another significant hyperparameter was the number of steps per episode. This was also manually tuned to optimize training time and agent performance. A higher number of steps enables more extensive exploration of the environment but at the cost of increased training time. We settled on 1000 steps per episode in our final implementation.
+To train the agent, we implemented a loop that allowed interaction with the environment to gather and learn from experiences. A critical hyperparameter in our training process was the number of episodes. This parameter was manually adjusted to balance training duration and agent performance. In our final setup, we used 1000 episodes, though the environment was solved in just 775. Another significant hyperparameter was the number of steps per episode. This was also manually tuned to optimize training time and agent performance. A higher number of steps enables more extensive exploration of the environment but at the cost of increased training time.
 
 Additional hyperparameters used included:
 
