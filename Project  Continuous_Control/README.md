@@ -26,9 +26,13 @@ There are two versions of the environment.
 
 * At the end of each episode, we sum the rewards received by each agent (without applying any discount), resulting in a score for each agent. This process yields 20 potentially distinct scores, from which we calculate the average.
 * This results in an average score per episode, with the average calculated across all 20 agents.
-* The environment is deemed solved when the moving average of the scores over 100 episodes reaches or exceeds +30.
-  
+* The environment is solved when the moving average of the scores over 100 episodes reaches or exceeds +30.
 
+# Included in this repository
+  
+* The code used to create and train the Agent, Continuous_Control.ipynb with model Actor and Critic, DDPG Agent, Training NN, and plot of rewards.
+* The trained model in the Saved Model Weight directory
+* A **Report.md** file detailing the development process, the learning Algorithm, and ideas for future work.
 
 
 
