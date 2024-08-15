@@ -61,7 +61,10 @@ The DuelingDQNetwork class defines an enhanced architecture for Dueling Deep Q-N
    * The final Q-values are computed by combining the value and the advantages. The advantage values are adjusted by subtracting their mean, ensuring that the 
       computed Q-values represent a balance between the state's estimated value and each action's relative importance.
      
-  
+### Functional Detail:
+
+The forward method describes how a state input through the network results in action values. It applies ReLU activations post-normalization to introduce non-linearity, allowing the network to learn complex patterns. The final Q-values are derived by summing the value for the state and the centered advantages for each action, which allows the network to discriminate between available actions based on the learned policy effectively.
+
 ![Train_Dueling_DQN](https://github.com/1Px-Vision/Advanced-Deep-Reinforcement-Learning-Solutions/blob/main/Project_Navigation/Train_Dueling_DQN.jpg)
   
 
