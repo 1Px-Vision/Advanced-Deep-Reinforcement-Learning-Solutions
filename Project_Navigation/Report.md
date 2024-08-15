@@ -51,7 +51,7 @@ The DuelingDQNetwork class defines an enhanced architecture for Dueling Deep Q-N
    * Batch Normalization: Applied after each linear transformation (bn1, bn2, bn3), batch normalization helps normalize the previous layers' output, 
       improving the stability and speed of the network's training process by ensuring consistent scale across inputs.
 
-     
+* Streams for Value and Advantage:   
 
 
 ![Train_Dueling_DQN](https://github.com/1Px-Vision/Advanced-Deep-Reinforcement-Learning-Solutions/blob/main/Project_Navigation/Train_Dueling_DQN.jpg)
