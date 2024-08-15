@@ -35,5 +35,7 @@ Additional hyperparameters used included:
 * Gamma: 0.99
 * Tau: 1e-3
 * Learning rate: 0.0005
+
+## Future improvements
   
 
