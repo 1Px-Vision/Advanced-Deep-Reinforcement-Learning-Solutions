@@ -1,5 +1,5 @@
 Saved Model Weights
 
 
-
-model_best_DuelingDQN.pth -> Proposed Dueling DQN Architecture 
+model_best_DQN.pth ->DQN Architecture 
+model_best_DuelingDQN.pth -> Dueling DQN Architecture 
