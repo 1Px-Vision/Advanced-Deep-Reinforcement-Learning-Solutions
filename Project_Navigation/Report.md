@@ -51,7 +51,11 @@ The DuelingDQNetwork class defines an enhanced architecture for Dueling Deep Q-N
    * Batch Normalization: Applied after each linear transformation (bn1, bn2, bn3), batch normalization helps normalize the previous layers' output, 
       improving the stability and speed of the network's training process by ensuring consistent scale across inputs.
 
-* Streams for Value and Advantage:   
+* Streams for Value and Advantage:
+    * Value Stream: Comprises a sequence of layers designed to estimate the state's overall value, independent of any specific action. This stream concludes 
+      with a single output neuron, representing the value of being in a given state.
+    * Advantage Stream: Similar in structure to the value stream, but culminates in multiple output neurons corresponding to each action's advantage—the relative 
+       importance of each action from the state.  
 
 
 ![Train_Dueling_DQN](https://github.com/1Px-Vision/Advanced-Deep-Reinforcement-Learning-Solutions/blob/main/Project_Navigation/Train_Dueling_DQN.jpg)
