@@ -48,3 +48,17 @@ This graph presents the rewards per episode for all agents during the training p
 
 ## Future Work
 
+* While I have invested significant time in fine-tuning the hyperparameters, alternative configurations that enable the Agent to solve the environment more efficiently may still exist. Therefore, additional testing could be conducted to explore these possibilities.
+* Given that the current project settings effectively nullified the exploration noise process, further experiments might be performed by introducing noise during the training phase.
+* The DDPG paper employs uniformly sampled minibatches from the replay buffer. As an alternative, implementing a prioritized replay buffer could provide valuable insights for comparison.
+* Introducing negative rewards could deter the Agent from making random moves that diverge from its primary objective of maintaining contact with the target.
+* This project aimed to achieve a reward of +30.0 over 100 consecutive episodes. Future tests might investigate whether this architecture can solve the environment with a higher target score.
+* Additionally, other actor-critic Algorithms are designed to tackle this type of environment. Future work could explore their implementation to assess their performance. Some of those algorithms are:
+   * TRPO - Trust Region Policy Optimization
+   * GAE - Generalized Advantage Estimation
+   *  A3C - Asynchronous Advantage Actor-Critic
+   * ACER - Actor Critic with Experience Replay
+   * PPO - Proximal Policy Optimization
+   * D4PG - Distributed Distributional Deterministic Policy Gradients
+  
+  
