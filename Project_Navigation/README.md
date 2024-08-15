@@ -8,3 +8,5 @@ This project aims to train an Agent using Deep Q Networks and Dueling DQN Archit
 # Enviroment & Task
 
 The setting is a square arena populated with yellow and blue bananas. The goal for the agent is to gather as many yellow bananas as possible while steering clear of the blue ones. The agent can perform four actions: move forward, backward, turn left, and turn right. The agent's environment is represented by a 37-dimensional state space, which includes the agent’s velocity and a ray-based perception system that detects objects in the agent’s forward path. Collecting a yellow banana yields a reward of +1, whereas collecting a blue banana incurs a penalty of -1. The challenge is episodic, and to successfully complete it, the agent needs to achieve an average score of at least +13 across 100 consecutive episodes.
+
+
