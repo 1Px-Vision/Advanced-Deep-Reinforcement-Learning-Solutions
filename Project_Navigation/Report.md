@@ -57,7 +57,11 @@ The DuelingDQNetwork class defines an enhanced architecture for Dueling Deep Q-N
     * Advantage Stream: Similar in structure to the value stream, but culminates in multiple output neurons corresponding to each action's advantage—the relative 
        importance of each action from the state.  
 
-
+* Output – Q-values:
+   * The final Q-values are computed by combining the value and the advantages. The advantage values are adjusted by subtracting their mean, ensuring that the 
+      computed Q-values represent a balance between the state's estimated value and each action's relative importance.
+     
+  
 ![Train_Dueling_DQN](https://github.com/1Px-Vision/Advanced-Deep-Reinforcement-Learning-Solutions/blob/main/Project_Navigation/Train_Dueling_DQN.jpg)
   
 
