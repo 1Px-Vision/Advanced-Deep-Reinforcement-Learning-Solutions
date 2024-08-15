@@ -10,10 +10,16 @@ The environment is set in a square world populated with yellow and blue bananas.
 
 # Implementation
 
-A deep Q-learning algorithm was employed to address the challenges posed by a particular environment. This algorithm utilizes a neural network to estimate the Q-function, which takes the state of the environment as input and outputs a Q-value for each possible action. These Q-values are then used to determine the optimal action for the agent to take. The Q-Learning algorithm facilitates the learning process, which trains the neural network. However, straightforward implementations of this algorithm face two significant issues: correlated experiences and shifting targets. To overcome these issues, the algorithm incorporates two strategies: Experience Replay and Fixed Q-Targets.
+A deep Q-learning algorithm was employed to address the challenges posed by a particular environment. This algorithm utilizes a neural network to estimate the Q-function, which takes the state of the environment as input and outputs a Q-value for each possible action. These Q-values are then used to determine the optimal action for the agent to take. The Q-learning algorithm facilitates the learning process, which trains the neural network. However, straightforward implementations of this algorithm face two significant issues: correlated experiences and shifting targets. To overcome these issues, the algorithm incorporates two strategies: Experience Replay and Fixed Q-Targets.
 
 ## Correlated experiences 
 
+Correlated experiences occur when the transitions experienced by an agent are related to one another, thus violating the assumption that they are independent and identically distributed. Such correlation can cause an agent to overestimate the expected rewards for certain states or actions, leading to suboptimal performance or convergence issues. To address this issue, a method known as Experience Replay is employed. This approach involves accumulating the agent's experiences in a replay buffer and then randomly sampling from this buffer to train the neural network, thereby mitigating the impact of correlated experiences.
+
 ## Correlated targets
 
+Correlated targets occur when the target values used for policy updates are not independent, leading to a correlated learning signal. This issue can hinder or even block the convergence to the optimal policy. To address this, the Fixed Q-Targets technique is employed. This method involves utilizing two neural networks: the local and target networks. The local network selects the best action for the agent, while the target network computes the target values for the Q-Learning algorithm. The target network's weights are updated with those of the local network every four steps.
+
 ## Neural network architecture
+
+
