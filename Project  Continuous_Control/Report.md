@@ -40,6 +40,7 @@ This graph presents the rewards per episode for all agents during the training p
 
 ### Untrained Agent
 
+![Untrained_Agent](https://github.com/1Px-Vision/Advanced-Deep-Reinforcement-Learning-Solutions/blob/main/Project%20%20Continuous_Control/untrained_agent.gif)
 
 ### Trained Agent
 
