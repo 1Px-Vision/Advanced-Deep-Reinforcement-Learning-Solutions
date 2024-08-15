@@ -6,7 +6,7 @@ This project aims to train an agent using Deep learning to navigate Unity's Bana
 
 # Training Code
 
-File Report.ipynb presents the code of the implementation training DQN and Dueling DQN architecture the agent to navigate Unity's Banana Collector environment
+The notebook 'File Report.ipynb' details the implementation and training of both DQN and Dueling DQN architectures, enabling an agent to navigate through Unity's Banana Collector environment. The agent successfully solves the environment in under 1800 episodes!
 
 # Enviroment & Task
 
