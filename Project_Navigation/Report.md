@@ -44,6 +44,9 @@ The DuelingDQNetwork class defines an enhanced architecture for Dueling Deep Q-N
 
 ### Architecture Overview:
 
+* Seed Initialization: The network uses a fixed seed for reproducibility of results.
+*  Input and Hidden Layers:
+
 
 ![Train_Dueling_DQN](https://github.com/1Px-Vision/Advanced-Deep-Reinforcement-Learning-Solutions/blob/main/Project_Navigation/Train_Dueling_DQN.jpg)
   
