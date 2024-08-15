@@ -40,6 +40,11 @@ Additional hyperparameters used included:
 
 ## Future improvements
 
+The DuelingDQNetwork class defines an enhanced architecture for Dueling Deep Q-Networks, a variant of Deep Q-Learning that more sophisticatedly approximates the state-action value function. This architecture is particularly effective in environments where the action space is large or complex.
+
+### Architecture Overview:
+
+
 ![Train_Dueling_DQN](https://github.com/1Px-Vision/Advanced-Deep-Reinforcement-Learning-Solutions/blob/main/Project_Navigation/Train_Dueling_DQN.jpg)
   
 
