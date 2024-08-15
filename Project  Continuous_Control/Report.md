@@ -46,4 +46,5 @@ This graph presents the rewards per episode for all agents during the training p
 
 ![Trained_Agent](https://github.com/1Px-Vision/Advanced-Deep-Reinforcement-Learning-Solutions/blob/main/Project%20%20Continuous_Control/trained_agent.gif)
 
+## Future Work
 
