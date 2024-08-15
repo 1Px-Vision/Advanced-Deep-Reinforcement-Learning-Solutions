@@ -10,6 +10,8 @@ The environment is set in a square world populated with yellow and blue bananas.
 
 # Implementation
 
+A deep Q-learning algorithm was employed to address the challenges posed by a particular environment. This algorithm utilizes a neural network to estimate the Q-function, which takes the state of the environment as input and outputs a Q-value for each possible action. These Q-values are then used to determine the optimal action for the agent to take. The Q-Learning algorithm facilitates the learning process, which trains the neural network. However, straightforward implementations of this algorithm face two significant issues: correlated experiences and shifting targets. To overcome these issues, the algorithm incorporates two strategies: Experience Replay and Fixed Q-Targets.
+
 ## Correlated experiences 
 
 ## Correlated targets
