@@ -1,1 +1,8 @@
 
+To install the unityagents library is need to unzip the Python file 
+!unzip /content/python.zip
+%cd /content/python
+!python setup.py install
+
+To install Version 1: One (1) Agent  !unzip /content/Reacher_Linux_NoVis_1_Agent
+To install Version 2: Twenty (20) Agent !unzip /content/Reacher_Linux_NoVis_20_Agent
