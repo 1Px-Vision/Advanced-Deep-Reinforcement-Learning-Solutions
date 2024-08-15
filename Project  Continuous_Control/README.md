@@ -34,6 +34,6 @@ There are two versions of the environment.
 * The trained model in the Saved Model Weight directory
 * A **Report.md** file detailing the development process, the learning Algorithm, and ideas for future work.
 
-
+# Setting up the environment
 
 
