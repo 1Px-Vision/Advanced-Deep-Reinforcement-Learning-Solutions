@@ -29,5 +29,11 @@ To train the agent, we implemented a loop that allowed interaction with the envi
 
 Additional hyperparameters used included:
 
-** Replay buffer size: 1000 
+* Replay buffer size: 1000
+* Batch size: 32
+* Update every: 4
+* Gamma: 0.99
+* Tau: 1e-3
+* Learning rate: 0.0005
+  
 
