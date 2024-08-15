@@ -23,3 +23,11 @@ Correlated targets occur when the target values used for policy updates are not 
 ## Neural network architecture
 The neural network architecture implemented in the algorithm comprises a basic, fully connected network with two hidden layers. It features an input layer with 37 neurons and an output layer with 4 neurons, with each hidden layer containing 64 neurons. The activation function applied in the hidden layers is ReLU, while the output layer utilizes the identity function for activation. The Adam optimizer, set with a learning rate 0.0005, was employed to optimize the network. PyTorch was the chosen library for crafting this neural network implementation.
 
+## Training task
+
+To train the agent, we implemented a loop that allowed interaction with the environment to gather and learn from experiences. A critical hyperparameter in our training process was the number of episodes. This parameter was manually adjusted to balance training duration and agent performance. In our final setup, we used 1200 episodes, though the environment was solved in just 775. Another significant hyperparameter was the number of steps per episode. This was also manually tuned to optimize training time and agent performance. A higher number of steps enables more extensive exploration of the environment but at the cost of increased training time. We settled on 1000 steps per episode in our final implementation.
+
+Additional hyperparameters used included:
+
+** Replay buffer size: 1000 
+
