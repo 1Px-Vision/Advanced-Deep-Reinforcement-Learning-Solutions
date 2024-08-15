@@ -46,6 +46,10 @@ The DuelingDQNetwork class defines an enhanced architecture for Dueling Deep Q-N
 
 * Seed Initialization: The network uses a fixed seed for reproducibility of results.
 *  Input and Hidden Layers:
+   * Linear Layers: The model begins with three fully connected linear layers (fc1, fc2, fc3) that progressively transform the input state size to more manageable 
+     dimensions. Each layer increases the network's ability to capture deep features at various levels of abstraction.
+
+     
 
 
 ![Train_Dueling_DQN](https://github.com/1Px-Vision/Advanced-Deep-Reinforcement-Learning-Solutions/blob/main/Project_Navigation/Train_Dueling_DQN.jpg)
