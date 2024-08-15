@@ -36,4 +36,29 @@ There are two versions of the environment.
 
 # Setting up the environment
 
+This section outlines the steps to obtain the project code, set up the local environment, and download the Unity environment and the Agents.
+
+## Download the Unity environment with the Agents
+
+Select and download the appropriate environment for your operating system from the links below, then decompress the file into your project folder:
+
+* Version 1: One (1) Agent :
+* Version 2: Twenty (20) Agent :
+
+## Adjusting the Hyperparameters
+
+* target_score: How many points your agent must obtain to consider the environment solved
+* target_episodes: How many episodes to consider when calculating the moving average
+* n_episodes: Maximum number of training episodes
+* max_t: Maximum number of time steps per episode
+* random_seed: The number used to initialize the pseudorandom number generator
+* batch_size: Minibatch size
+* buffer_size: Replay buffer size
+* gamma: Discount factor for expected rewards
+* lr_actor: Learning rate for the local actor's network
+* lr_critic: Learning rate for the local critic's network
+* tau: Multiplicative factor for the soft update of the target networks' weights
+* noise_decay: Multiplicative factor for the noise-process rate decay
+* fc_layers for the actor-network: Number and size of the actor network's layers
+* fc_layers for the critic network: Number and size of the critic network's layers
 
