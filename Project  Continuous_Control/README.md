@@ -22,7 +22,11 @@ There are two versions of the environment.
   The task is episodic, and to solve the environment, the agent must achieve an average score of +30 across 100 consecutive episodes.
   
 * **Version 2: Twenty (20) Agents**
-   The challenge in solving the second version of the environment is slightly different, considering the presence of multiple agents. Specifically, the agents must achieve an average score of +30, calculated over 100 consecutive episodes and across all agents.
+   The challenge in solving the second version of the environment is slightly different, considering the presence of multiple agents. Specifically, the agents must achieve an average score of +30, calculated over 100 consecutive episodes across all agents.
+
+* At the end of each episode, we sum the rewards received by each agent (without applying any discount), resulting in a score for each agent. This process yields 20 potentially distinct scores, from which we calculate the average.
+* This results in an average score per episode, with the average calculated across all 20 agents.
+* The environment is deemed solved when the moving average of the scores over 100 episodes reaches or exceeds +30.
   
 
 
