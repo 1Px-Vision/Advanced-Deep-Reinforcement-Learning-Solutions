@@ -2,7 +2,7 @@
 
 # Objective 
 
-This project aims to train an agent using Deep learning to navigate Unity's Banana Collector environment. In this environment, the task is to gather yellow bananas while avoiding blue ones. Employing a Deep learning algorithm, the agent successfully mastered the environment in 786 DQN and 570 episodes of Dueling DQN.
+This project aims to train an agent using Deep learning to navigate Unity's Banana Collector environment. In this environment, the task is to gather yellow bananas while avoiding blue ones. Employing a Deep learning algorithm, the agent successfully mastered the environment in 688 DQN and 570 episodes of Dueling DQN.
 
 # Training Code
 
