@@ -38,6 +38,8 @@ This graph presents the rewards per episode for all agents during the training p
 
 ![Result_One_Agent](https://github.com/1Px-Vision/Advanced-Deep-Reinforcement-Learning-Solutions/blob/main/Project%20%20Continuous_Control/Result_One_Agent.png)
 
+The following graph displays the rewards per episode for each of the 20 agents individually during the training phase and their respective moving averages. It demonstrates that every Agent achieved a moving average reward of at least 30.0 points over the first 50 episodes.
+
 ## Trained Agent
 
 ### Untrained Agent
