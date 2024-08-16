@@ -42,7 +42,31 @@ The observation space comprises 8 variables, which correspond to the position an
 
 **The Critic Network**, on the other hand, receives 48 variables as input, representing the observed state-space of both agents (24 variables per agent). The output from the Critic's first hidden layer is combined with the actions predicted by any Actor Network and then fed into the Critic's second hidden layer. The final output of this network is a prediction of the target value based on the observations and the estimated optimal actions for both agents. In other words, the Critic computes the optimal action-value function Q(s, a) by utilizing all agents' observations and best-estimated actions, thereby functioning as a centralized critic.
 
+### Target and Local Networks
+
+Although not illustrated in the figure above, every network in this model is implemented in local and target forms. This dual-network approach was introduced in the DQN paper to minimize correlations with the target values. The roles and functions of the target and local networks are detailed in the section titled [Learning Algorithm](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf).
+
+### Batch Normalization
+
+Batch normalization was applied to the critic network immediately after the first hidden layer's output was concatenated with the action values. Given that the action values are in the range [-1, 1], applying batch normalization at this stage helps prevent these values from becoming outliers compared to others. Additionally, I conducted experiments applying batch normalization across all layers of the actor network, including the input variables.
+
 ## Training and hyperparameters
+
+The values defined for the hyperparameters:
+
+* seed: 997
+* actor_layers: [64, 64]
+* critic_layers: [64, 64]
+* actor_lr: 0.003
+* critic_lr: 0.0004
+* lr scheduler decay: 0.2
+* lr scheduler steps at: 0.1, 0.2, 0.4
+* buffer_size: 1000000
+* batch_size: 64
+* gamma: 0.99
+* tau: 0.008
+* noise_theta: 0.9
+* noise_sigma: 0.01
 
 ## Result
 
