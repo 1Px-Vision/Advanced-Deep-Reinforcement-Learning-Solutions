@@ -34,7 +34,9 @@ In summary, the following values were assigned to the hyperparameters:
 ## Result
 ### Plot of the rewards
 
-This graph presents the rewards per episode for all agents during the training phase and the moving average. It demonstrates that the Agent achieved a moving average reward of at least 30.0 points over the initial 100 episodes.
+This graph presents the rewards per episode for all agents during the training phase and the moving average. It demonstrates that the Agent achieved a moving average reward of at least 30.0 points over the initial 50 episodes.
+
+![Result_One_Agent](https://github.com/1Px-Vision/Advanced-Deep-Reinforcement-Learning-Solutions/blob/main/Project%20%20Continuous_Control/Result_One_Agent.png)
 
 ## Trained Agent
 
