@@ -35,6 +35,8 @@ To solve the environment, the task is episodic, and your agents must achieve an 
 
 ## Setting up the environment
 
+This section describes how to get the code for this project, configure the local environment, and download the Unity environment with the Agents.
+
 ### Adjusting the Hyperparameters
 
 To experiment with how the Agents learn through distinct parameters, you can tune these variables by changing their values in the singleton instance of the Config class:
