@@ -29,6 +29,25 @@ To solve the environment, the task is episodic, and your agents must achieve an 
 
 ### Adjusting the Hyperparameters
 
-To experiment with how the Agents learn through distinct parameters, you can tune these variables by changing their values in the singleton instance of Config class:
+To experiment with how the Agents learn through distinct parameters, you can tune these variables by changing their values in the singleton instance of the Config class:
 
+* device: where your code will run: for CPU use 'CPU'; for GPU use 'cuda:0'
+* seed: number used to initialize the pseudorandom number generator
+* target_score: how many points the agents must obtain to consider the environment solved
+* target_episodes: how many episodes to consider when calculating the moving average
+* max_episodes: maximum number of training episodes
+* actor_layers: number and size of the actor network's layers
+* critic_layers: number and size of the critic network's layers
+* actor_lr: learning rate for the actor's local network
+* critic_lr: learning rate for the critic's local network
+* lr_sched_step: how many steps before the decaying learning rate
+* lr_sched_gamma: multiplicative factor of learning rate decay
+* batch_normalization: whether use batch normalization for the critic or not
+* buffer_size: the size of the replay buffer
+* batch_size: minibatch size for the training phase
+* gamma: discount factor for expected rewards
+* tau: multiplicative factor for the soft update of the target networks's weights
+* noise: whether use the Ornstein-Uhlenbeck noise process or not
+* noise_theta: the long-term mean of the noise process
+* noise_sigma: the volatility or average magnitude
   
