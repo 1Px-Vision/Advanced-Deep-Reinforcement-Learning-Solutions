@@ -29,7 +29,7 @@ In summary, the following values were assigned to the hyperparameters:
 * tau: 10^-3
 * noise_decay: 0.999
 * target_score: 30.0
-* target_episodes: 100
+* target_episodes: 50
 
 ## Result
 ### Plot of the rewards
