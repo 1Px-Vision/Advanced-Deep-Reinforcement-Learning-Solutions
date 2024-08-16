@@ -21,6 +21,14 @@ et = ((st1, st2), (at1, at2), (rt1, rt2), (s't1, s't2))
 
 After a sufficient number of experiences have been stored in the replay buffer, the Multi-Agent system randomly selects a minibatch of experiences to update the network weights. This update is performed individually for each agent. It’s important to note that each agent's critic network processes the states and actions of all agents in the environment. This allows the critic to learn about the policies of other agents, which is the key aspect of centralized training.
 
+### Mean Squared Error Loss
+For each experience in the minibatch, the Multi-Agent system computes the error between the target and predicted rewards. The target reward  𝑦 for a single experience is determined using the critic-target 𝑄𝜇′ and actor-target 𝜇′ networks. The next observations  (𝑠1′,𝑠2′) from the experience tuple are fed into the respective agent’s actor-target network 𝜇′ to predict the appropriate actions (𝑎1′,𝑎2′). These predicted next actions are then passed into the critic-target network 𝑄𝜇′ along with the next states, resulting in 𝑄𝜇′𝑖(𝑠1′,𝑠2′,𝑎1′,𝑎2′). The output of this network is the predicted expected reward for the next observations, which is then multiplied by a discount factor 𝛾. The final result is the discounted expected reward, which is added to the immediate reward 𝑟𝑖 of the agent for that experience, yielding the target reward 𝑦. The predicted reward for that experience is obtained using the critic-local network 𝑄𝜇. The current observation 𝑠𝑖 from the experience tuple, corresponding to the agent being trained in this iteration, is passed into the critic-local network along with the actions  (𝑎1,𝑎2) from the experience tuple. The error for this experience is calculated as the difference between the target and predicted rewards. These errors are squared, and the loss 𝐿 is computed as the mean of these squared errors, known as the Mean Squared Error Loss (MSE Loss), across all experience tuples in the minibatch. This loss 𝐿 is then used to update the weights of the critic-local network.
+
+L = Es,a,r,s'[(Qμi(s1,s2,a1,a2) - y)2]
+
+y = ri + γQμ'i(s'1,s'2,a'1,a'2) | a'j=μ'j(s'j)
+
+
 ## Training and hyperparameters
 
 ## Result
