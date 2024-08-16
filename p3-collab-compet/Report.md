@@ -75,4 +75,10 @@ This graph presents the rewards per episode during the training phase and the mo
 
 ## Trained Agent
 
+The trained agents were compared with untrained ones.
+
+### Untrained Agents
+
+### Trained Agents
+
 ## Future Work
