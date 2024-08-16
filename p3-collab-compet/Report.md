@@ -10,6 +10,16 @@ To tackle this challenge, I have studied and implemented the Multi-Agent Deep De
 
 The training function interacts with the environment by first taking the observations of the state space from each agent (s1, s2). These observations are then sent to the Multi-Agent controller, which determines the appropriate action for each agent. The Multi-Agent controller splits the observations and forwards them to the respective agents. Each agent then uses its current policy π(s) → a, approximated by its actor-local network, to return the best-believed action. To promote exploration, the Ornstein-Uhlenbeck process is applied to add noise to these actions, with each agent managing its noise process. The resulting actions (a1, a2) are then returned to the training function. The training function triggers the environment using these actions. After executing the actions, the environment provides rewards (r1, r2) and the next observations (s'1, s'2). The experience tuple (et), which includes the initial observations, actions taken, rewards received, and next observations, is sent back to the Multi-Agent controller. This marks the completion of one iteration of the training loop, which begins anew with the next observations now serving as the current observations.
 
+### The replay buffer
+
+In the training function's final step, the Multi-Agent controller stores the received experience tuple in a unified replay buffer. 
+𝐷.
+Dt = {e1, ..., et}
+et = ((st1, st2), (at1, at2), (rt1, rt2), (s't1, s't2))
+
+### Networks' weights
+
+After a sufficient number of experiences have been stored in the replay buffer, the Multi-Agent system randomly selects a minibatch of experiences to update the network weights. This update is performed individually for each agent. It’s important to note that each agent's critic network processes the states and actions of all agents in the environment. This allows the critic to learn about the policies of other agents, which is the key aspect of centralized training.
 
 ## Training and hyperparameters
 
