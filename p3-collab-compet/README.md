@@ -31,7 +31,7 @@ To solve the environment, the task is episodic, and your agents must achieve an 
 
 To experiment with how the Agents learn through distinct parameters, you can tune these variables by changing their values in the singleton instance of the Config class:
 
-* device: where your code will run: for CPU use 'CPU'; for GPU use 'cuda:0'
+* device: where your code will run: for CPU, use 'CPU'; for GPU, use 'cuda:0.'
 * seed: number used to initialize the pseudorandom number generator
 * target_score: how many points the agents must obtain to consider the environment solved
 * target_episodes: how many episodes to consider when calculating the moving average
