@@ -36,6 +36,12 @@ The actor-local network μ is updated by applying the chain rule to the expected
 ### Network input
 The observation space comprises 8 variables, which correspond to the position and velocity of both the ball and racket. Each agent receives a localized observation. To account for multiple past observations, this environment stacks 3 vector observations, enabling temporal comparison. As a result, each agent is provided with an observation vector containing 24 variables, representing the current observation along with the previous two. The networks in this project process these 24 variables as input, as I chose to utilize all three vector observations rather than just the current one.
 
+### Actor and Critic networks
+
+**The Actor Network** takes as input 24 variables representing the observed state-space and outputs 2 values corresponding to the predicted optimal action for that observation. This means the Actor is used to approximate the optimal policy deterministically π.
+
+**The Critic Network**, on the other hand, receives 48 variables as input, representing the observed state-space of both agents (24 variables per agent). The output from the Critic's first hidden layer is combined with the actions predicted by any Actor Network and then fed into the Critic's second hidden layer. The final output of this network is a prediction of the target value based on the observations and the estimated optimal actions for both agents. In other words, the Critic computes the optimal action-value function Q(s, a) by utilizing all agents' observations and best-estimated actions, thereby functioning as a centralized critic.
+
 ## Training and hyperparameters
 
 ## Result
