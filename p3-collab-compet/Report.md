@@ -33,6 +33,9 @@ The actor-local network μ is updated by applying the chain rule to the expected
 
 ## Network architecture
 
+### Network input
+The observation space comprises 8 variables, which correspond to the position and velocity of both the ball and racket. Each agent receives a localized observation. To account for multiple past observations, this environment stacks 3 vector observations, enabling temporal comparison. As a result, each agent is provided with an observation vector containing 24 variables, representing the current observation along with the previous two. The networks in this project process these 24 variables as input, as I chose to utilize all three vector observations rather than just the current one.
+
 ## Training and hyperparameters
 
 ## Result
