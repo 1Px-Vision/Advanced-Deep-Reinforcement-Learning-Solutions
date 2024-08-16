@@ -51,6 +51,7 @@ Although not illustrated in the figure above, every network in this model is imp
 Batch normalization was applied to the critic network immediately after the first hidden layer's output was concatenated with the action values. Given that the action values are in the range [-1, 1], applying batch normalization at this stage helps prevent these values from becoming outliers compared to others. Additionally, I conducted experiments applying batch normalization across all layers of the actor network, including the input variables.
 
 ## Training and hyperparameters
+Due to the architecture developed in this project, agents can have distinct reward functions and, consequently, different goals, allowing them to act either competitively or collaboratively. In a competitive scenario, agents receive rewards based solely on their individual actions. In contrast, in a collaborative scenario, all agents share the same rewards based on the group's collective actions. I tested both scenarios and found that the competitive setting produced more effective agents, as they were highly motivated to perform the best possible actions to maximize their rewards. Conversely, in the collaborative setting, where rewards were aggregated across all agents to produce a single reward, the agents appeared less motivated to optimize their actions, possibly because they still received rewards based on the efforts of other agents.
 
 The values defined for the hyperparameters:
 
@@ -97,4 +98,4 @@ The trained agents were compared with untrained ones.
 
 * The objective of this project was to achieve a reward of +0.5 over 100 consecutive episodes. Further experiments could investigate whether this architecture can solve the same environment with a higher target score.
 
-* The MADDPG paper suggests a training approach involving an ensemble of policies for each agent, contributing to more robust multi-agent policies. This aspect was not explored in the current project but could be a focus for future research.
+* The MADDPG paper suggests a training approach involving an ensemble of policies for each agent, which could contribute to more robust multi-agent policies. This aspect was not explored in the current project but could be a focus for future research.
