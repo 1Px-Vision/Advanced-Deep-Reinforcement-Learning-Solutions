@@ -22,4 +22,13 @@ To solve the environment, the task is episodic, and your agents must achieve an 
 * After each episode, calculate the total rewards received by each agent (without applying any discount), resulting in two separate scores. From there, take the maximum score.
 * This maximum score represents the episode's score.
 * The environment is considered solved when the average of these scores over 100 episodes reaches or exceeds +0.5.
+
+## Included in this repository 
+
+## Setting up the environment
+
+### Adjusting the Hyperparameters
+
+To experiment with how the Agents learn through distinct parameters, you can tune these variables by changing their values in the singleton instance of Config class:
+
   
