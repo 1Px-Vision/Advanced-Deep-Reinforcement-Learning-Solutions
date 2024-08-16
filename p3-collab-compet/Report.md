@@ -86,3 +86,15 @@ The trained agents were compared with untrained ones.
 
 
 ## Future Work
+
+* While significant effort has been dedicated to optimizing the hyperparameters, alternative configurations may enable the agents to solve the environment even more efficiently. Therefore, additional testing could be conducted to confirm this.
+
+* Exploring different noise process algorithms could enhance the exploration of the environment. Moreover, introducing a scheduler to decay the noise over time gradually could be beneficial.
+
+* Both the MADDPG paper and this project utilize uniformly sampled minibatches from the replay buffer. Although some implementations of prioritized experiences were tested, future work could delve deeper into this approach.
+
+* Introducing negative rewards could be an effective strategy to deter agents from making random moves that deviate from their objectives.
+
+* The objective of this project was to achieve a reward of +0.5 over 100 consecutive episodes. Further experiments could investigate whether this architecture can solve the same environment with a higher target score.
+
+* The MADDPG paper suggests a training approach involving an ensemble of policies for each agent, contributing to more robust multi-agent policies. This aspect was not explored in the current project but could be a focus for future research.
