@@ -29,9 +29,9 @@ L = Es,a,r,s'[(Qμi(s1,s2,a1,a2) - y)2]
 y = ri + γQμ'i(s'1,s'2,a'1,a'2) | a'j=μ'j(s'j)
 
 ### Actor-local update: policy gradient
-The actor-local network μ is updated by applying the chain rule to the expected return, calculated using the recently updated critic-local network Qμ. To determine the expected return, each experience in the minibatch is processed by passing each observation (s1, s2) in the experience tuple through the respective agent's actor-local network μ to predict the corresponding action. This set of actions (a1, a2) is then input into the critic-local network Qμ along with the states: Qμi(s1, s2, a1, a2), the network's output represents the expected return and the loss used to update the weights of the actor-local network is the average of all expected returns.
+The actor-local network μ is updated by applying the chain rule to the expected return, calculated using the recently updated critic-local network Qμ. To determine the expected return, each experience in the minibatch is processed by passing each observation (s1, s2) in the experience tuple through the respective agent's actor-local network μ to predict the corresponding action. This set of actions (a1, a2) is then input into the critic-local network Qμ along with the states: Qμi(s1, s2, a1, a2), the network's output represents the expected return and the loss used to update the weights of the actor-local network is the average of all expected returns Qμi(s1,s2,a1,a2) | aj=μj(sj).
 
-
+## Network architecture
 
 ## Training and hyperparameters
 
