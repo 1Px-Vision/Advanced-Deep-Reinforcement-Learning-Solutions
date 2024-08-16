@@ -9,7 +9,7 @@ This project aims to train two agents controlling rackets to bounce a ball over 
 
 ## Understanding the environment
 
-This environment is constructed using the Unity Machine Learning Agents Toolkit (ML-Agents), an open-source Unity plugin that allows games and simulations to function as environments for training intelligent agents. The project environment provided by Udacity closely resembles the Tennis environment found on the Unity ML-Agents GitHub page, though it is not identical. In this environment, two agents control rackets to volley a ball over a net. When an agent successfully hits the ball over the net, it earns a reward of +0.1. Conversely, if an agent allows the ball to hit the ground or hits it out of bounds, it incurs a penalty of -0.01. The primary objective for each agent is to keep the ball in play.
+This environment is constructed using the Unity Machine Learning Agents Toolkit (ML-Agents). This open-source Unity plugin allows games and simulations to function as environments for training intelligent agents. The project environment provided by Udacity closely resembles the Tennis environment found on the Unity ML-Agents GitHub page, though it is not identical. In this environment, two agents control rackets to volley a ball over a net. When an agent successfully hits the ball over the net, it earns a reward of +0.1. Conversely, if an agent allows the ball to hit the ground or hits it out of bounds, it incurs a penalty of -0.01. The primary objective for each agent is to keep the ball in play.
 
 ### State and action spaces
 
@@ -24,6 +24,14 @@ To solve the environment, the task is episodic, and your agents must achieve an 
 * The environment is considered solved when the average of these scores over 100 episodes reaches or exceeds +0.5.
 
 ## Included in this repository 
+
+* The code used to create and train the Agent
+* Tennis.ipynb - notebook containing the challenge for this project
+* The trained model
+* checkpoint.pt
+* Files describing all the packages required to set up the environment
+* The Report.md file describing the development process and the learning algorithm, along with ideas for future work
+* This README.md file
 
 ## Setting up the environment
 
