@@ -6,6 +6,16 @@ This project aims to develop and train a double-jointed arm agent capable of kee
 
 ![Environment](https://github.com/1Px-Vision/Advanced-Deep-Reinforcement-Learning-Solutions/blob/main/Project%20%20Continuous_Control/environment_illustration.gif)
 
+## Included in this repository 
+
+* The code used to create and train the Agent
+* Continuos_Control.ipynb - notebook containing the challenge for this project
+* The trained model
+* checkpoint.pt
+* Files describing all the packages required to set up the environment
+* The Report.md file describing the development process and the learning algorithm, along with ideas for future work
+* This README.md file
+
 # Understanding the environment
 
 This environment has been developed using the Unity Machine Learning Agents Toolkit (ML-Agents). This open-source Unity plugin allows games and simulations to function as environments for training intelligent agents. In this setting, a double-jointed arm can move to specified target locations. The agent receives a reward of +0.1 for each step that its hand remains within the goal location. Therefore, the agent's objective is to keep its position at the target location for as many time steps as possible.
