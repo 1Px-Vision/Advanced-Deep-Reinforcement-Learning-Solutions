@@ -82,5 +82,7 @@ The trained agents were compared with untrained ones.
 ![Untrained_Agent](https://github.com/1Px-Vision/Advanced-Deep-Reinforcement-Learning-Solutions/blob/main/p3-collab-compet/untrained_agents.gif)
 
 ### Trained Agents
+![Trained_Agent](https://github.com/1Px-Vision/Advanced-Deep-Reinforcement-Learning-Solutions/blob/main/p3-collab-compet/trained_agents.gif)
+
 
 ## Future Work
