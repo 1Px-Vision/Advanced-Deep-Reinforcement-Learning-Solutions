@@ -37,6 +37,11 @@ To solve the environment, the task is episodic, and your agents must achieve an 
 
 This section describes how to get the code for this project, configure the local environment, and download the Unity environment with the Agents.
 
+### Download the Unity environment with the Agents
+
+Download the environment from one of the links below and decompress the file into your project folder.
+You need only select the environment that matches your operating system:
+
 ### Adjusting the Hyperparameters
 
 To experiment with how the Agents learn through distinct parameters, you can tune these variables by changing their values in the singleton instance of the Config class:
