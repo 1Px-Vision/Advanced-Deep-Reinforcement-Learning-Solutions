@@ -40,6 +40,8 @@ This graph presents the rewards per episode for all agents during the training p
 
 The following graph displays the rewards per episode for each of the 20 agents individually during the training phase and their respective moving averages. It demonstrates that every Agent achieved a moving average reward of at least 30.0 points over the first 50 episodes.
 
+![Result_Twenty](https://github.com/1Px-Vision/Advanced-Deep-Reinforcement-Learning-Solutions/blob/main/Project%20%20Continuous_Control/Result_Twenty_Agents.png)
+
 ## Trained Agent
 
 ### Untrained Agent
@@ -61,7 +63,7 @@ The following graph displays the rewards per episode for each of the 20 agents i
    * TRPO - Trust Region Policy Optimization
    * GAE - Generalized Advantage Estimation
    *  A3C - Asynchronous Advantage Actor-Critic
-   * ACER - Actor Critic with Experience Replay
+   * ACER - Actor-Critic with Experience Replay
    * PPO - Proximal Policy Optimization
    * D4PG - Distributed Distributional Deterministic Policy Gradients
   
