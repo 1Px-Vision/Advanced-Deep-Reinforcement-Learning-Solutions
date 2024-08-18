@@ -2,7 +2,7 @@
 
 ## The algorithm 
 
-To tackle this challenge, I have studied and implemented the Multi-Agent Deep Deterministic Policy Gradient (MADDPG) algorithm described in the paper [Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments](https://arxiv.org/abs/1706.02275). The environment for this project consists of two agents that perform similar actions based on similar observations. A straightforward approach to this project would be implementing a single pair of actor-critic networks, effectively creating one "brain" controlling both agents. This would be analogous to controlling two rackets with each hand and playing against yourself. However, the true allure of this project lies in training entirely distinct agents who are aware of each other's presence and take action to collaborate and compete in pursuit of the highest possible score. Therefore, I chose the more challenging path of training separate agents, as outlined in the MADDPG paper. MADDPG does not require that all agents share identical action and observation spaces or adhere to the same policy π. This flexibility allows for training completely different agents within the same environment. Since each agent has its private pair of actor-critic networks, they can behave in distinct ways, pursuing different goals while simultaneously interacting in the same environment. Consequently, the agents can operate in either collaborative or competitive scenarios. Although this project involves two agents, the implementation is designed to be scalable to multiple agents.
+To tackle this challenge, I have studied and implemented the Multi-Agent Deep Deterministic Policy Gradient (MADDPG) algorithm described in the paper [Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments](https://arxiv.org/abs/1706.02275). The environment for this project consists of two agents that perform similar actions based on similar observations. A straightforward approach to this project would be implementing a single pair of actor-critic networks, effectively creating one "brain" controlling both agents. This would be analogous to controlling two rackets with each hand and playing against yourself. However, the true allure of this project lies in training entirely distinct agents who are aware of each other's presence and take action to collaborate and compete in pursuit of the highest possible score. Therefore, I chose the more challenging path of training separate agents, as outlined in the MADDPG paper. MADDPG does not require that all agents share identical action and observation spaces or adhere to the same policy π. This flexibility allows for training completely different agents within the same environment. Since each agent has its private pair of actor-critic networks, they can behave in distinct ways, pursuing other goals while simultaneously interacting in the same environment. Consequently, the agents can operate in either collaborative or competitive scenarios. Although this project involves two agents, the implementation is designed to be scalable to multiple agents.
 
 ## Learning algorithm
 
@@ -51,23 +51,22 @@ Although not illustrated in the figure above, every network in this model is imp
 Batch normalization was applied to the critic network immediately after the first hidden layer's output was concatenated with the action values. Given that the action values are in the range [-1, 1], applying batch normalization at this stage helps prevent these values from becoming outliers compared to others. Additionally, I conducted experiments applying batch normalization across all layers of the actor network, including the input variables.
 
 ## Training and hyperparameters
-Due to the architecture developed in this project, agents can have distinct reward functions and, consequently, different goals, allowing them to act either competitively or collaboratively. In a competitive scenario, agents receive rewards based solely on their individual actions. In contrast, in a collaborative scenario, all agents share the same rewards based on the group's collective actions. I tested both scenarios and found that the competitive setting produced more effective agents, as they were highly motivated to perform the best possible actions to maximize their rewards. Conversely, in the collaborative setting, where rewards were aggregated across all agents to produce a single reward, the agents appeared less motivated to optimize their actions, possibly because they still received rewards based on the efforts of other agents.
+Due to the architecture developed in this project, agents can have distinct reward functions and, consequently, different goals, allowing them to act either competitively or collaboratively. In a competitive scenario, agents receive rewards based solely on their actions. In contrast, in a collaborative scenario, all agents share the same rewards based on the group's collective actions. I tested both scenarios and found that the competitive setting produced more effective agents, as they were highly motivated to perform the best possible actions to maximize their rewards. Conversely, in the collaborative setting, where rewards were aggregated across all agents to produce a single reward, the agents appeared less motivated to optimize their actions, possibly because they still received rewards based on the efforts of other agents.
 
 The values defined for the hyperparameters:
 
-* seed: 997
-* actor_layers: [64, 64]
-* critic_layers: [64, 64]
-* actor_lr: 0.003
-* critic_lr: 0.0004
-* lr scheduler decay: 0.2
-* lr scheduler steps at: 0.1, 0.2, 0.4
+* seed: 42
+* actor_layers: [128,128]
+* critic_layers: [128,128]
+* actor_lr: 2e-4
+* critic_lr: 2e-4
+* lr scheduler decay: 0
 * buffer_size: 1000000
-* batch_size: 64
+* batch_size: 128
 * gamma: 0.99
-* tau: 0.008
-* noise_theta: 0.9
-* noise_sigma: 0.01
+* tau: 1e-3
+* noise_theta: 0.15
+* noise_sigma: 0.1
 
 ## Result
 
