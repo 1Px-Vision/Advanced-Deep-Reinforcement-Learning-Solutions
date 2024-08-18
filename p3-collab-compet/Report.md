@@ -73,6 +73,13 @@ The values defined for the hyperparameters:
 ### Plot of the rewards
 This graph presents the rewards per episode during the training phase and the moving average. It demonstrates that the agents achieved a moving average reward of at least 0.5 points over 100 episodes.
 
+![Result_Agent](https://github.com/1Px-Vision/Advanced-Deep-Reinforcement-Learning-Solutions/blob/main/p3-collab-compet/Result_Collab_C.png)
+
+The following graphs present the rewards per episode for each agent individually during the training phase. They demonstrate that, by the end of the training, each agent successfully achieved the maximum possible reward.
+
+![Result_Agent_0](https://github.com/1Px-Vision/Advanced-Deep-Reinforcement-Learning-Solutions/blob/main/p3-collab-compet/Result_Collab_C_Agent.png)
+
+
 ## Trained Agent
 
 The trained agents were compared with untrained ones.
