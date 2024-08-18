@@ -16,3 +16,8 @@ This repository explores the application of advanced deep reinforcement learning
 * **Real-World Testing Scenarios:** Guidelines and tools for deploying models in real-world testing environments with drones and vision systems.
 * **Comprehensive Documentation:** Detailed documentation covering setup, deployment, and algorithm customization.
 
+## Contributing
+Contributions are welcome! If you'd like to contribute, please fork the repository and create a pull request with your changes.
+
+## Contact
+For any questions or inquiries, please contact caoq@1px-vision.com
