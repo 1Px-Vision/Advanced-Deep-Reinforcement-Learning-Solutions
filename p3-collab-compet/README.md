@@ -26,9 +26,9 @@ To solve the environment, the task is episodic, and your agents must achieve an 
 ## Included in this repository 
 
 * The code used to create and train the Agent
-* Tennis.ipynb - notebook containing the challenge for this project
+* Project_3_Collab_Compet.ipynb - notebook containing the challenge for this project
 * The trained model
-* checkpoint.pt
+* Save Weight Model directory with checkpoint.pth for Agent and Critic
 * Files describing all the packages required to set up the environment
 * The Report.md file describing the development process and the learning algorithm, along with ideas for future work
 * This README.md file
